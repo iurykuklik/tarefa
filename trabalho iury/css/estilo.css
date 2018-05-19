@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* seletor simples */
+html{background-color:lightgray;}
+/* seletor simples com duas propriedades */
+body{
+    background-color:lightgray;
+    font-size-adjust:100%;
+}
+
+/* seletor agrupado */
+header, nav, article, aside, footer{
+    margin:20px;
+    background-color:burlywood;
+}
+
+/* este seletor aplica 60px em cima e embaixo e 20px dos lados*/
+/* nav {margin:60px 20px;} */
+/* este seletor aplica a margem em sentido horário */
+/* topo, direita, base, esquerda */
+/* nav {margin:10px 50px 80px 100px;} */
+
+p{
+	font-family:Arial, Helvetica,sans-serif;
+ 	font-size: 1.1em;
+	text-align: justify;
+	padding:10px;
+}
+
+/* seletor encadeado, ou seja a propriedade é aplicada no último elemento. Nesse caso o LI dentro de um UL */
+ul li{display:inline;}
+
+ul li a{
+    /* topo, direita, base, esquerda */
+    padding: 0px 10px 0px 10px;
+    /* padding-left:25px; */
+	color: black; /* cor da fonte */
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.1em; 
+}
+
+/* PSEUDO-SELETORES */
+ul li a:hover{
+    color: black; /* cor da fonte */
+    background-color: burlywood;
+}
+/* Abaixo estamos referenciando uma CLASSE. As classes podem ser repetidas em diversos elementos no HTML */
+
+.nome-discreto {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: .8em;
+    text-align: left;
+    color: gray;
+}
+
+.nome-discreto:hover {color: red;}
+
+/* Ajustar o posicionamento */
+
+body {
+    width: 980px;
+    /* top, righ, bottom, left */
+    margin: 0px auto 0px auto;  /* Zera o espaço no topo e base (0px) e "auto" para esquerda e direita. */ 
+}
+
+article {
+    width: 570px;
+    margin-top: 0;
+    float: left;
+}
+aside {
+    width: 330px;
+    margin-top: 0;
+    float: left;
+}
+
+footer {
+   clear: both; 
+/*    background-color: red;*/
+}
+
+/* tabelas */
+table, tr, td, th {
+    padding: 2px;
+    border: 1px solid black;  
+}
+
+tbody {background-color: gray;}
+thead {background-color: burlywood;}
